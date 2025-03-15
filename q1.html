@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>3-Column Flexbox Layout (Question1)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		
+		html {
+			background-color: #eacb92;
+		}
+		h2 {
+			padding: 1em;
+			text-align: left;
+		}
+		header{
+			border-bottom: 2px solid #ef9c00;
+		}
+
+		body{
+			margin-left: 3%;
+			margin-right: 3%;
+			margin-top: 3%;
+			background-color: white;
+			border: 2px solid black;
+		}
+
+		.column{
+			float: left;
+			padding: 10px;
+			height: 400px;
+		}
+
+		.left, .right{
+			padding: 10px;
+			width: 25%;
+			border-bottom: 2px solid #ef9c00;
+		}
+
+		.middle{
+			width: 50%;	
+			border-right: 2px solid #ef9c00;
+			border-left: 2px solid #ef9c00;
+			border-bottom: 2px solid #ef9c00;
+			padding: 10px;
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		.footer{
+			clear: both;
+			border-top: 2px solid #ef9c00;
+		}
+
+	</style>
+</head>
+<body>
+
+	<header>
+		<h2>3-Column Layout</h2>
+	</header>
+
+	<div class="row">
+		<aside class="column left">
+			<h2>Sidebar 1</h2>
+			<p>This is the first sidebar content.</p>
+		</aside>
+
+				<main class="column middle">
+			<h2>Main Content</h2>
+			<p>This is the main content section. It takes up more space compared to the sidebars.</p>
+		</main>
+
+
+		<aside class="column right">
+			<h2>Sidebar 2</h2>
+			<p>This is the second sidebar content.</p>
+		</aside>
+	</div>
+
+	<footer>
+		<h2>Footer</h2>
+	</footer>
+
+</body>
+</html>
